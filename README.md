@@ -1,7 +1,7 @@
 
-![flow](assets/img/flow.png)
+![flow](frontend/assets/img/flow.png)
 
-# Project Name City Explorer
+# Project Name Custom Servers with Node and Express
 
 **Author**: Issa Salman
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
@@ -14,10 +14,11 @@ Builing Application that gets data from USing API and in this lab the data were 
 2- Creating react app
 3-install packages 
 4-Use API to request and take DAta from 
+5-Making API useing express and node js
 
 
 ## Architecture
-React, Bootstrap, API, axiso  
+React, Bootstrap, API, axiso  ,express,node js
 
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
