@@ -11,7 +11,7 @@
     "url": "git+https://github.com/issasalman/city-explorer-api.git"
   },
   "author": "Issa",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/issasalman/city-explorer-api/issues"
   },
@@ -22,5 +22,6 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
-  "description": "![flow](frontend/assets/img/flow.png)"
+  "description": "![flow](frontend/assets/img/flow.png)",
+  "devDependencies": {}
 }
