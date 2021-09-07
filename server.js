@@ -49,11 +49,12 @@ app.get("/weather", (request, response) => {
     if (returnArray.length) {
       response.json(returnArray);
     } else {
-      response.send('error: Something went wrong.');
+      response.send("error: Something went wrong.");
     }
   } else {
     response.send("404 error page not found  ");
   }
 });
 
-app.listen(3020, () => {});
+let port = process.env.PORT || 3020;
+app.listen(port, () => {});
