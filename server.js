@@ -16,7 +16,7 @@ class Forecast {
 Forecast.all = [];
 
 app.get("/", function (request, response) {
-  response.send("Hello 301  👋");
+  response.send("Hello 301👋 In this API u can know the weather of any location You want Like :Amman And Seattle  ");
 });
 
 app.get("/weatherInfo", function (request, response) {
