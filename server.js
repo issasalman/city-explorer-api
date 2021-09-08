@@ -12,17 +12,20 @@ class Forecast {
   constructor(description, date) {
     this.description = description;
     this.date = date;
-    // Forecast.all.push(this);
+   
   }
 }
-// Forecast.all = [];
+
 
 class Moovies {
-  constructor(title, overview, vote, count) {
+  constructor(title, overview, vote, count, img,popularity,release_date) {
     this.title = title;
     this.overview = overview;
     this.vote = vote;
     this.count = count;
+    this.img = img;
+    this.popularity=popularity;
+    this.release_date=release_date;
   }
 }
 
@@ -62,9 +65,9 @@ app.get("/weather", async (request, response) => {
       );
     });
 
-    let arr2 = arr1[0];
     if (arr1.length) {
-      response.json(arr2);
+      response.json(arr1);
+      console.log(arr1);
     } else {
       response.send("error: Something went wrong.");
     }
@@ -102,13 +105,16 @@ app.get("/movies", async (request, response) => {
         `Title: ${data1.title}`,
         `Overview: ${data1.overview}`,
         `Average votes: ${data1.vote_average}`,
-        ` Total Votes: ${data1.vote_count}`
+        ` Total Votes: ${data1.vote_count}`,
+        `${data1.poster_path}`,
+        `popularity:${data1.popularity}`,
+        `release_date:${data1.release_date}`
+
       );
     });
 
-    let arr2 = arr1[0];
     if (arr1.length) {
-      response.json(arr2);
+      response.json(arr1);
     } else {
       response.send("error: Something went wrong.");
     }
