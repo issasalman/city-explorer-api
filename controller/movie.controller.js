@@ -28,7 +28,7 @@ const getMovie = async (request, response) => {
     if (arr1.length) {
       response.json(arr1);
     } else {
-      response.send('error: Something went wrong.');
+      response.send('No Data');
     }
   } else {
     response.json('error: Something went wrong.');
